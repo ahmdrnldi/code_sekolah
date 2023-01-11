@@ -10,7 +10,7 @@ function Hero3() {
             <div className='flex items-center justify-center gap-12'>
                 <img
                     src={Hero2}
-                    className='w-[32%] rounded-2xl  shadow-2xl shadow-black'
+                    className='w-[32%] rounded-2xl  shadow-2xl shadow-black' data-aos="zoom-out-down"
                 />
                 <div className='w-[60%]'>
                     <h1 className='text-5xl font-fontHeading'>

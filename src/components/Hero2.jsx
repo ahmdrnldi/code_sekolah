@@ -13,7 +13,7 @@ function Hero2() {
                     Bidang Keahlian
                 </h1>
                 <div className='mx-auto p-2 w-1/3'>
-                    <h4 className='text-base animate__animated animate__pulse'>
+                    <h4 className='text-base'>
                         Kami Menuntut Siswa/i Untuk mengusai bidang yang telah
                         kami Berikan
                     </h4>
