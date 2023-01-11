@@ -10,17 +10,18 @@ function Hero3() {
             <div className='flex items-center justify-center gap-12'>
                 <img
                     src={Hero2}
-                    className='w-[32%] rounded-2xl  shadow-2xl shadow-black' data-aos="zoom-out-down"
+                    className='w-[32%] rounded-2xl  shadow-2xl shadow-black'
+                    data-aos='zoom-out-down'
                 />
                 <div className='w-[60%]'>
                     <h1 className='text-5xl font-fontHeading'>
                         Kenapa Harus I_Sekolah ?
                     </h1>
                     <p className='text-base mt-6 leading-7'>
-                        Kenapa harus I_Sekolah Di karnakan kami memberikan fitur
-                        dan kegunaan kusus Untuk kebutuhan yang di butuhkan oleh
-                        para guru untuk menyampaikan atau mengalokasikan sebagai
-                        guru ke pelajar sebagai mana mestinya
+                        Kami memberikan fitur dan kegunaan kusus Untuk kebutuhan
+                        yang di butuhkan oleh para guru untuk menyampaikan atau
+                        mengalokasikan sebagai guru ke pelajar sebagai mana
+                        mestinya
                     </p>
                     <div className='flex flex-col w-full text-justify'>
                         <div className='flex items-center gap-1 mt-6'>
