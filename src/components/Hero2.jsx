@@ -1,29 +1,25 @@
 import React from 'react';
 import Card from './Card';
 
-
 import RPL from '../assets/img/card-img/RPL.png';
 import Multimedia from '../assets/img/card-img/Multimedia.png';
 import Tkj from '../assets/img/card-img/Tkj.png';
 
 function Hero2() {
     return (
-        <div className='bg-gradient-to-r from-pink-300 via-gray-300 to-white w-full min-h-screen'>
-            <button id='btnmasuk'>Masuk</button>
+        <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full min-h-screen'>
             <div className='p-4 text-center'>
-            <h1 class="animate__animated animate__fadeInLeft">An animated element</h1>
-            <h1 class="animate__animated animate__fadeInLeft">An animated element</h1>
-            <h1 class="animate__animated animate__bounce">Hello Word</h1>
                 <h1 className='text-[#2E1A35] text-4xl mt-4 font-fontHeading'>
                     Bidang Keahlian
                 </h1>
                 <div className='mx-auto p-2 w-1/3'>
-                    <h4 className='text-gray-500 text-base animate__animated animate__pulse' >
-                        Kami Menuntut Siswa/i Untuk mengusai bidang yang telah kami Berikan 
+                    <h4 className='text-base animate__animated animate__pulse'>
+                        Kami Menuntut Siswa/i Untuk mengusai bidang yang telah
+                        kami Berikan
                     </h4>
                 </div>
             </div>
-            <div  className='flex justify-between shadow-xl w-full p-12 transition: width 2s, height 4s'>
+            <div className='flex justify-between shadow-xl w-full p-12 transition: width 2s, height 4s'>
                 <Card
                     image={RPL}
                     title={'Rekayasa Perangkat Lunak'}
@@ -58,10 +54,8 @@ function Hero2() {
                     hastag1={'IT'}
                     hastag2={'Jaringan'}
                 />
-                
             </div>
         </div>
-
     );
 }
 

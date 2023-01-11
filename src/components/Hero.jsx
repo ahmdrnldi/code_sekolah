@@ -4,13 +4,13 @@ import HeroIcon from '../assets/icons/IsIcon.png';
 
 function Hero() {
     return (
-        <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-85 px-12'>
+        <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-12'>
             <div className='p-4 flex'>
                 <div className='p-14 flex-col'>
                     <h1 className='text-white font-fontHeading text-6xl mt-12 leading-snug w-full'>
                         Wellcome to i_Sekolah Menerima Pendaftaran Siswa/i Baru
                     </h1>
-                    <h4 className='w-1/2 text-white font-[Poppins] mt-2 leading-normal '>
+                    <h4 className='w-1/2 text-white font-[Poppins] mt-2 leading-8 '>
                         I_Sekolah telah membuka pendaftaran baru bagi masyarakat
                         sekitar untuk mengembangkan talenta muda saat ini.
                     </h4>
