@@ -8,15 +8,12 @@ function App() {
     return (
         <div>
             <Navbar />
-            <div>
-                <Hero />
-                <div>
-                    <Hero2 />
-                </div>
-                <div>
-                    <Hero3 />
-                </div>
-            </div>
+            <hr />
+            <Hero />
+            <hr />
+            <Hero2 />
+            <hr />
+            <Hero3 />
         </div>
     );
 }
