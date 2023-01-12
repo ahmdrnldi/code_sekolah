@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily:{
         'logoSekolah': ['Righteous', 'cursive'],
-        'fontHeading': ['Acme', 'sans-serif']
+        'fontHeading': ['Acme', 'sans-serif'],
+        'fontFooter' : ['Sofia Sans Condensed', 'sans-serif']
       }
     },
   },
