@@ -55,11 +55,72 @@ function Navbar() {
                             </a>
                         </li>
                     </ul>
-                    <div className='bg-transparent border-2 border-[#2E1A35] hover:bg-blue-700 hover:border-white ml-auto mr-5 text-base rounded-lg p-4 px-6 font-fontHeading text-[#2E1A35] hover:text-white cursor-pointer'>
-                        Sign In
-                    </div>
-                    <div className='bg-transparent border-2 border-[#2E1A35] hover:bg-green-700 hover:border-white text-base rounded-lg p-4 px-6 font-fontHeading text-[#2E1A35] hover:text-white cursor-pointer'>
-                        Register
+                    <div className='w-full flex justify-end gap-4'>
+                        <div className='w-full flex justify-end'>
+                            <label
+                                htmlFor='signin'
+                                className='btn btn-primary text-xl'
+                            >
+                                Sign In
+                            </label>
+
+                            <input
+                                type='checkbox'
+                                id='signin'
+                                className='modal-toggle'
+                            />
+                            <div className='modal modal-bottom sm:modal-middle'>
+                                <div className='modal-box'>
+                                    <h3 className='font-bold text-lg'>
+                                        Congratulations random Internet user!
+                                    </h3>
+                                    <p className='py-4'>
+                                        You've been selected for a chance to get
+                                        one year of subscription to use
+                                        Wikipedia for free!
+                                    </p>
+                                    <div className='modal-action'>
+                                        <label htmlFor='signin' className='btn'>
+                                            Yay!
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                htmlFor='register'
+                                className='btn btn-success text-xl'
+                            >
+                                Register
+                            </label>
+
+                            <input
+                                type='checkbox'
+                                id='register'
+                                className='modal-toggle'
+                            />
+                            <div className='modal modal-bottom sm:modal-middle'>
+                                <div className='modal-box'>
+                                    <h3 className='font-bold text-lg'>
+                                        Congratulations random Internet user!
+                                    </h3>
+                                    <p className='py-4'>
+                                        You've been selected for a chance to get
+                                        one year of subscription to use
+                                        Wikipedia for free!
+                                    </p>
+                                    <div className='modal-action'>
+                                        <label
+                                            htmlFor='register'
+                                            className='btn'
+                                        >
+                                            Yay!
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
