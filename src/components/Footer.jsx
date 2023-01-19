@@ -25,7 +25,7 @@ const Footer = () => {
                 {/* Kotak */}
                 <div className='flex flex-col'>
                     <div className='space-y-5'>
-                        <h1 className='text-white text-xl'>PENDAFTARAN</h1>
+                        <h1 className='text-white text-xl '>PENDAFTARAN</h1>
                         <hr />
                         <TextIsi path={'#'} text={'Keunggulan Kampus'} />
                         <TextIsi path={'#'} text={'Brosur 2023'} />
