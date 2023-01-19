@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col'>
                     <div className='space-y-5'>
-                        <h1 className='text-white text-xl'>KEMAHASISWAAN</h1>
+                        <h1 className='text-white text-xl'>KESISWAAN</h1>
                         <hr />
                         <TextIsi
                             path={'#'}
