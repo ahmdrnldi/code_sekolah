@@ -10,7 +10,7 @@ function Hero3() {
             <div className='flex items-center justify-center gap-12'>
                 <img
                     src={Hero2}
-                    className='w-[32%] rounded-2xl  shadow-2xl shadow-black'
+                    className='w-[32%] rounded-2xl shadow-2xl shadow-black'
                     data-aos='zoom-out-down'
                 />
                 <div className='w-[60%]'>
@@ -40,7 +40,7 @@ function Hero3() {
                                 <GoVerified size={15} />
                                 <h3 className='font-bold text-lg'>VISI</h3>
                             </div>
-                            <ol className='text-base text-left space-y-6 leading-7'>
+                            <ol className='text-base text-left space-y-9 leading-7'>
                                 <li>
                                     1. Tercapainya pendidikan untuk mencapai
                                     Prestasi dan lulusan berkualitas tinggi
