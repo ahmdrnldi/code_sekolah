@@ -59,7 +59,8 @@ function Navbar() {
                         <div className='w-full flex justify-end bg'>
                             <label
                                 htmlFor='signin'
-                                className='btn btn-primary text-xl'>
+                                className='btn btn-primary text-xl'
+                            >
                                 Sign In
                             </label>
 
@@ -69,33 +70,58 @@ function Navbar() {
                                 className='modal-toggle'
                             />
                             <div className='modal modal-bottom sm:modal-middle'>
-                                <div className='modal-box'>
-                                    <h3 className='font-bold text-lg text-gray-400'>
-                                       Log In
+                                <div className='modal-box bg-white'>
+                                    <h3 className='font-bold text-lg text-gray-600'>
+                                        Login
                                     </h3>
-                                    <h4 className='text-gray-400'>silahkan masukan NIS & password Anda</h4>
-                             <form action="" method='post' role={'alert'}>
-                                <div className='mb-4'>
-                                <label className='input-group'>
-                                    <input className='w-full py-2 px-3 ' type="NIS" placeholder="NIS" name="email" required/>
-                                </label>
-                                </div>
-                                <div>
-                                <label className='input-group'>
-                                    <input className='w-full py-2 px-3' type="Password" placeholder="Pasword" name="Password" required/>
-                                </label>
-                                <a href="#">
-                                <p className='modal-action text-blue-400 underline'>Lupa Kata sandi?</p>
-                                </a>
-                                </div>
-  
-                            </form>
+                                    <h4 className='text-gray-600 mt-4 mb-3'>
+                                        Silahkan Masukan NIS & Password Anda
+                                    </h4>
+                                    <form
+                                        action=''
+                                        method='post'
+                                        role={'alert'}
+                                    >
+                                        <div className='mb-5'>
+                                            <label className='input-group'>
+                                                <input
+                                                    className='w-full py-2 px-3 bg-white border border-gray-300 text-gray-500 text-sm'
+                                                    type='text'
+                                                    placeholder='NIS'
+                                                    name='email'
+                                                    required
+                                                />
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label className='input-group'>
+                                                <input
+                                                    className='w-full py-2 px-3 bg-white border border-gray-300 text-gray-500 text-sm'
+                                                    type='password'
+                                                    placeholder='Pasword'
+                                                    name='Password'
+                                                    required
+                                                />
+                                            </label>
+                                            <a href='#'>
+                                                <p className='modal-action text-blue-500 underline'>
+                                                    Lupa Kata sandi?
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </form>
                                     <div className='modal-action'>
-                                        <label htmlFor='signin' className='btn bg-blue-500'>
+                                        <label
+                                            htmlFor='signin'
+                                            className='btn bg-blue-700 hover:bg-blue-600 text-white border-none'
+                                        >
                                             Submit
                                         </label>
-                                        <label htmlFor='signin' className='btn bg-red-400'>
-                                            batal
+                                        <label
+                                            htmlFor='signin'
+                                            className='btn bg-red-700 hover:bg-red-600 border-none text-white'
+                                        >
+                                            Batal
                                         </label>
                                     </div>
                                 </div>
@@ -104,7 +130,8 @@ function Navbar() {
                         <div>
                             <label
                                 htmlFor='register'
-                                className='btn btn-success text-xl'>
+                                className='btn btn-success text-xl'
+                            >
                                 Register
                             </label>
 
@@ -114,115 +141,185 @@ function Navbar() {
                                 className='modal-toggle'
                             />
                             <div className='modal modal-bottom sm:modal-middle'>
-                                <div className='w-[20%] modal-box'>
-                                    <h3 className='text-gray-400 font-bold text-xl'>
+                                <div className='modal-box bg-white'>
+                                    <h3 className='text-gray-700 font-bold text-xl'>
                                         Register Online For I_Sekolah
                                     </h3>
-                                    <p className='py-4 text-ellipsis text-gray-400'>
-                                       Silahkan Lengakpi Form Di bawah ini Untuk Melengkapi Identitas Persyaratan 
-                                      Pendaftarann
+                                    <p className='py-4 text-ellipsis text-gray-600'>
+                                        Silahkan Lengakpi Form Di bawah ini
+                                        Untuk Melengkapi Identitas Persyaratan
+                                        Pendaftarann
                                     </p>
 
-                                    <form action="" method='post' role={'alert'}>
-                             <div className='mb-4'>
-                             <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">No. UN SMP/MTs/Sederajat</h3>
-                                    <label className='input-group'>
-                                         <input className='w-full py-2 px-3 bg-[#c0c5ce]  ' type="No" placeholder="No. UN" name="No" required/>
-                                    </label>
-                                </div>
-                                <div className='mb-4'>
-                                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">Nama Lengkap</h3>
-                                    <label className='input-group'>
-                                         <input className='w-full py-2 px-3 bg-[#c0c5ce] ' type="Nama" placeholder="Nama Lengkap" name="Nama" required/>
-                                    </label>
-                                </div>
-                                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">Jenis Kelamin</h3>
-    <div className="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
-    <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="bordered-radio-1" class="w-full py-4 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Laki-Laki</label>
-    </div>
-    <div class="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
-    <input checked id="bordered-radio-2" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="bordered-radio-2" className="w-full py-4 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">PeremPuan</label>
-    </div>
-                   
-                    <div className='mb-4'>
-                    <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">Tempat Tgl/Lahir</h3>
-                                    <label className='input-group'>
-                                         <input className='w-full py-2 px-3 bg-[#c0c5ce] ' type="TTL" placeholder="Tempat Lahir" name="TTL" required/>
-                                         <div class="relative">
-  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
-  </div>
-  <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date"/>
-</div>
-                                    </label>
-                                </div>
-                        
-                                <div className='mb-4'>
-                                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">Nama Orangtua/Wali</h3>
-                                    <label className='input-group'>
-                                         <input className='w-full py-2 px-3 bg-[#c0c5ce]  ' type="Nama" placeholder="Nama OrangTua" name="Nama" required/>
-                                    </label>
-                                </div>
+                                    <form
+                                        action=''
+                                        method='post'
+                                        role={'alert'}
+                                    >
+                                        <div className='mb-4'>
+                                            <h3 className='mb-2 font-semibold text-gray-600 text-sm'>
+                                                No. UN SMP/MTs/Sederajat
+                                            </h3>
+                                            <label className='input-group'>
+                                                <input
+                                                    className='w-full py-2 px-3 text-sm bg-[#c0c5ce]  '
+                                                    type='No'
+                                                    placeholder='No. UN'
+                                                    name='No'
+                                                    required
+                                                />
+                                            </label>
+                                        </div>
+                                        <div className='mb-4'>
+                                            <h3 className='mb-2 font-semibold text-gray-600 text-sm'>
+                                                Nama Lengkap
+                                            </h3>
+                                            <label className='input-group'>
+                                                <input
+                                                    className='w-full py-2 px-3 text-sm bg-[#c0c5ce] '
+                                                    type='Nama'
+                                                    placeholder='Nama Lengkap'
+                                                    name='Nama'
+                                                    required
+                                                />
+                                            </label>
+                                        </div>
+                                        <h3 className='mb-4 font-semibold text-gray-600 text-sm'>
+                                            Jenis Kelamin
+                                        </h3>
+                                        <div className='flex mb-3 gap-4 items-center border rounded'>
+                                            <label className='label cursor-pointer'>
+                                                <span className='label-text flex items-center gap-3 text-gray-600'>
+                                                    Laki-laki
+                                                    <input
+                                                        type='radio'
+                                                        name='radio-10'
+                                                        className='radio w-4 h-4 border border-gray-300 checked:bg-red-500'
+                                                    />
+                                                </span>
+                                            </label>
+                                            <label className='label cursor-pointer'>
+                                                <span className='label-text flex items-center gap-3 text-gray-600'>
+                                                    Perempuan
+                                                    <input
+                                                        type='radio'
+                                                        name='radio-10'
+                                                        className='radio w-4 h-4 border border-gray-300 checked:bg-blue-500'
+                                                    />
+                                                </span>
+                                            </label>
+                                        </div>
 
-                                <div className='mb-4'>
-                                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">Alamat</h3>
-                                <p className='text-gray-400 text-xs'>sesuai KK / KTP / Surat Ket.Domisil min. 6 bln Ortu/Wali murid calon siswa</p>
-                                    <label className='input-group'>
-                                         <input className='w-full py-2 px-3 bg-[#c0c5ce]  ' type="Alamat" placeholder="Alamat" name="Alamat" required/>
-                                    </label>
-                                </div>
+                                        <div className='mb-4'>
+                                            <h3 className='mb-4 font-semibold text-gray-600 text-sm'>
+                                                Tempat Tgl/Lahir
+                                            </h3>
+                                            <label className='input-group'>
+                                                <input
+                                                    className='w-full py-2 px-3 text-sm bg-[#c0c5ce] '
+                                                    type='TTL'
+                                                    placeholder='Tempat Lahir'
+                                                    name='TTL'
+                                                    required
+                                                />
+                                                <div class='relative'>
+                                                    <div class='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
+                                                        <svg
+                                                            aria-hidden='true'
+                                                            class='w-5 h-5 text-gray-500 dark:text-gray-400'
+                                                            fill='currentColor'
+                                                            viewBox='0 0 20 20'
+                                                            xmlns='http://www.w3.org/2000/svg'
+                                                        >
+                                                            <path
+                                                                fill-rule='evenodd'
+                                                                d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z'
+                                                                clip-rule='evenodd'
+                                                            ></path>
+                                                        </svg>
+                                                    </div>
+                                                    <input
+                                                        datepicker
+                                                        type='date'
+                                                        class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                                                        placeholder='Pilih Tanggal'
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
 
-                                <div className='mb-4'>
-                                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">Asal Sekolah</h3>
-                                    <label className='input-group'>
-                                         <input className='w-full py-2 px-3 bg-[#c0c5ce]  ' type="Alamat" placeholder="Alamat" name="Alamat" required/>
-                                    </label>
-                                </div>
+                                        <div className='mb-4'>
+                                            <h3 className='mb-4 font-semibold text-gray-600 text-sm'>
+                                                Nama Orangtua/Wali
+                                            </h3>
+                                            <label className='input-group'>
+                                                <input
+                                                    className='w-full py-2 px-3 text-sm bg-[#c0c5ce]  '
+                                                    type='Nama'
+                                                    placeholder='Nama Orang Tua'
+                                                    name='Nama'
+                                                    required
+                                                />
+                                            </label>
+                                        </div>
 
-                                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">Agama</h3>
-<ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-        <div class="flex items-center pl-3">
-            <input id="list-radio-license" type="radio" value="" name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-            <label for="list-radio-license" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Islam</label>
-        </div>
-    </li>
-    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-        <div class="flex items-center pl-3">
-            <input id="list-radio-id" type="radio" value="" name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-            <label for="list-radio-id" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Kristen</label>
-        </div>
-    </li>
-    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-        <div class="flex items-center pl-3">
-            <input id="list-radio-millitary" type="radio" value="" name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-            <label for="list-radio-millitary" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Protestan</label>
-        </div>
-    </li>
-    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-        <div class="flex items-center pl-3">
-            <input id="list-radio-passport" type="radio" value="" name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-            <label for="list-radio-passport" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Khatolik</label>
-        </div>
-    </li>
-    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-        <div class="flex items-center pl-3">
-            <input id="list-radio-passport" type="radio" value="" name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-            <label for="list-radio-passport" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Khatolik</label>
-        </div>
-    </li>
-</ul>
+                                        <div className='mb-4'>
+                                            <h3 className='mb-2 font-semibold text-gray-600 text-sm'>
+                                                Alamat
+                                            </h3>
+                                            <p className='text-gray-400 text-xs mb-2'>
+                                                Sesuai KK / KTP / Surat
+                                                Ket.Domisil min. 6 bln Ortu/Wali
+                                                murid calon siswa
+                                            </p>
+                                            <label className='input-group'>
+                                                <input
+                                                    className='w-full py-2 px-3 bg-[#c0c5ce]  '
+                                                    type='Alamat'
+                                                    placeholder='Alamat'
+                                                    name='Alamat'
+                                                    required
+                                                />
+                                            </label>
+                                        </div>
 
+                                        <div className='mb-6'>
+                                            <h3 className='mb-4 font-semibold text-gray-600 text-sm'>
+                                                Asal Sekolah
+                                            </h3>
+                                            <label className='input-group'>
+                                                <input
+                                                    className='w-full py-2 px-3 text-sm bg-[#c0c5ce]  '
+                                                    type='Alamat'
+                                                    placeholder='Alamat'
+                                                    name='Alamat'
+                                                    required
+                                                />
+                                            </label>
+                                        </div>
 
-                            </form>
+                                        <select className='select w-full max-w-xs text-gray-600 text-sm bg-gray-300'>
+                                            <option disabled>Agama</option>
+                                            <option>Islam</option>
+                                            <option>Kristen</option>
+                                            <option>Atheis</option>
+                                            <option>Satanic</option>
+                                            <option>Ga punya</option>
+                                        </select>
+                                    </form>
 
                                     <div className='modal-action'>
                                         <label
                                             htmlFor='register'
-                                            className='btn'>
-                                            Next
+                                            className='btn'
+                                        >
+                                            Daftar
+                                        </label>
+                                        <label
+                                            htmlFor='register'
+                                            className='btn'
+                                        >
+                                            Batal
                                         </label>
                                     </div>
                                 </div>
